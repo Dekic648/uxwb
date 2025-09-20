@@ -212,67 +212,6 @@ const principlesData = [
             "User surveys on feature importance",
             "Focus groups discussing product concepts"
         ]
-    },
-    {
-        id: "who-is-the-user",
-        title: "Who is the user?",
-        category: "research",
-        description: "A fundamental principle of user experience design that focuses on identifying and understanding the specific target users for whom a product, service, or application is being created.",
-        origin: "This principle emerged from user-centered design methodologies and market research practices, emphasizing the importance of precise user definition for effective product development.",
-        keyTakeaways: [
-            "Be as specific as possible when defining your target user",
-            "Avoid abstract user definitions that lead to unclear product direction",
-            "Define user characteristics, needs, and constraints in detail",
-            "Use concrete user descriptions to guide design decisions"
-        ],
-        examples: [
-            "Defining a user as: 'A small business owner with limited tech experience, no paid online banking service, who often doesn't know exactly how much they owe in taxes and contributions'",
-            "Creating detailed user personas with specific demographics and behaviors",
-            "Conducting user research to identify precise target audience characteristics",
-            "Avoiding generic descriptions like 'all people who want to pay taxes online'"
-        ]
-    },
-    {
-        id: "ux-design-challenge",
-        title: "UX Design Challenge",
-        category: "methodology",
-        description: "A structured approach to involving users in the design process when your team is discussing which problems to solve, ensuring user needs are at the center of decision-making.",
-        origin: "This methodology emerged from design thinking and user-centered design practices, emphasizing the importance of user involvement in problem definition and solution ideation phases.",
-        keyTakeaways: [
-            "Include users when discussing which problems to solve - they know their problems best",
-            "Define your target user as specifically as possible before recruitment",
-            "Recruit 5-10 users who match your defined user profile",
-            "Schedule sessions lasting up to 1 hour for optimal engagement",
-            "Consider organizing workshops with groups of 5 users as you gain experience"
-        ],
-        examples: [
-            "Conducting user interviews to understand real problems before solution design",
-            "Organizing co-design workshops with 5 target users to define problems",
-            "Creating detailed user profiles to ensure accurate recruitment",
-            "Scheduling 1-hour sessions with users to discuss their challenges and ideal solutions",
-            "Running problem-definition workshops with small groups of representative users"
-        ]
-    }
-];
-    {
-        id: "who-is-the-user",
-        title: "Who is the user?",
-        category: "research",
-        visual: "triangle",
-        description: "A fundamental principle of user experience design that focuses on identifying and understanding the specific target users for whom a product, service, or application is being created.",
-        origin: "This principle emerged from user-centered design methodologies and market research practices, emphasizing the importance of precise user definition for effective product development.",
-        keyTakeaways: [
-            "Be as specific as possible when defining your target user",
-            "Avoid abstract user definitions that lead to unclear product direction",
-            "Define user characteristics, needs, and constraints in detail",
-            "Use concrete user descriptions to guide design decisions"
-        ],
-        examples: [
-            "Defining a user as: u0027A small business owner with limited tech experience, no paid online banking service, who often doesnu0027t know exactly how much they owe in taxes and contributionsu0027",
-            "Creating detailed user personas with specific demographics and behaviors",
-            "Conducting user research to identify precise target audience characteristics",
-            "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
-        ]
     }
 ];
 
@@ -312,27 +251,7 @@ function filterPrinciples(filter) {
         btn.classList.remove('active');
         if (btn.dataset.filter === filter) {
             btn.classList.add('active');
-        },
-    {
-        id: "who-is-the-user",
-        title: "Who is the user?",
-        category: "research",
-        visual: "triangle",
-        description: "A fundamental principle of user experience design that focuses on identifying and understanding the specific target users for whom a product, service, or application is being created.",
-        origin: "This principle emerged from user-centered design methodologies and market research practices, emphasizing the importance of precise user definition for effective product development.",
-        keyTakeaways: [
-            "Be as specific as possible when defining your target user",
-            "Avoid abstract user definitions that lead to unclear product direction",
-            "Define user characteristics, needs, and constraints in detail",
-            "Use concrete user descriptions to guide design decisions"
-        ],
-        examples: [
-            "Defining a user as: u0027A small business owner with limited tech experience, no paid online banking service, who often doesnu0027t know exactly how much they owe in taxes and contributionsu0027",
-            "Creating detailed user personas with specific demographics and behaviors",
-            "Conducting user research to identify precise target audience characteristics",
-            "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
-        ]
-    }
+        }
     });
     
     // Filter and display principles
@@ -409,26 +328,6 @@ function handleContactForm(e) {
     if (!data.name || !data.email || !data.subject || !data.message) {
         alert('Please fill in all fields');
         return;
-    },
-    {
-        id: "who-is-the-user",
-        title: "Who is the user?",
-        category: "research",
-        visual: "triangle",
-        description: "A fundamental principle of user experience design that focuses on identifying and understanding the specific target users for whom a product, service, or application is being created.",
-        origin: "This principle emerged from user-centered design methodologies and market research practices, emphasizing the importance of precise user definition for effective product development.",
-        keyTakeaways: [
-            "Be as specific as possible when defining your target user",
-            "Avoid abstract user definitions that lead to unclear product direction",
-            "Define user characteristics, needs, and constraints in detail",
-            "Use concrete user descriptions to guide design decisions"
-        ],
-        examples: [
-            "Defining a user as: u0027A small business owner with limited tech experience, no paid online banking service, who often doesnu0027t know exactly how much they owe in taxes and contributionsu0027",
-            "Creating detailed user personas with specific demographics and behaviors",
-            "Conducting user research to identify precise target audience characteristics",
-            "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
-        ]
     }
     
     // Simulate form submission
@@ -447,27 +346,7 @@ function initSmoothScrolling() {
                     behavior: 'smooth',
                     block: 'start'
                 });
-            },
-    {
-        id: "who-is-the-user",
-        title: "Who is the user?",
-        category: "research",
-        visual: "triangle",
-        description: "A fundamental principle of user experience design that focuses on identifying and understanding the specific target users for whom a product, service, or application is being created.",
-        origin: "This principle emerged from user-centered design methodologies and market research practices, emphasizing the importance of precise user definition for effective product development.",
-        keyTakeaways: [
-            "Be as specific as possible when defining your target user",
-            "Avoid abstract user definitions that lead to unclear product direction",
-            "Define user characteristics, needs, and constraints in detail",
-            "Use concrete user descriptions to guide design decisions"
-        ],
-        examples: [
-            "Defining a user as: u0027A small business owner with limited tech experience, no paid online banking service, who often doesnu0027t know exactly how much they owe in taxes and contributionsu0027",
-            "Creating detailed user personas with specific demographics and behaviors",
-            "Conducting user research to identify precise target audience characteristics",
-            "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
-        ]
-    }
+            }
         });
     });
 }
@@ -484,54 +363,14 @@ function initNavigationHighlighting() {
             const sectionHeight = section.clientHeight;
             if (scrollY >= (sectionTop - 200)) {
                 current = section.getAttribute('id');
-            },
-    {
-        id: "who-is-the-user",
-        title: "Who is the user?",
-        category: "research",
-        visual: "triangle",
-        description: "A fundamental principle of user experience design that focuses on identifying and understanding the specific target users for whom a product, service, or application is being created.",
-        origin: "This principle emerged from user-centered design methodologies and market research practices, emphasizing the importance of precise user definition for effective product development.",
-        keyTakeaways: [
-            "Be as specific as possible when defining your target user",
-            "Avoid abstract user definitions that lead to unclear product direction",
-            "Define user characteristics, needs, and constraints in detail",
-            "Use concrete user descriptions to guide design decisions"
-        ],
-        examples: [
-            "Defining a user as: u0027A small business owner with limited tech experience, no paid online banking service, who often doesnu0027t know exactly how much they owe in taxes and contributionsu0027",
-            "Creating detailed user personas with specific demographics and behaviors",
-            "Conducting user research to identify precise target audience characteristics",
-            "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
-        ]
-    }
+            }
         });
         
         navLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === `#${current}`) {
                 link.classList.add('active');
-            },
-    {
-        id: "who-is-the-user",
-        title: "Who is the user?",
-        category: "research",
-        visual: "triangle",
-        description: "A fundamental principle of user experience design that focuses on identifying and understanding the specific target users for whom a product, service, or application is being created.",
-        origin: "This principle emerged from user-centered design methodologies and market research practices, emphasizing the importance of precise user definition for effective product development.",
-        keyTakeaways: [
-            "Be as specific as possible when defining your target user",
-            "Avoid abstract user definitions that lead to unclear product direction",
-            "Define user characteristics, needs, and constraints in detail",
-            "Use concrete user descriptions to guide design decisions"
-        ],
-        examples: [
-            "Defining a user as: u0027A small business owner with limited tech experience, no paid online banking service, who often doesnu0027t know exactly how much they owe in taxes and contributionsu0027",
-            "Creating detailed user personas with specific demographics and behaviors",
-            "Conducting user research to identify precise target audience characteristics",
-            "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
-        ]
-    }
+            }
         });
     });
 }
@@ -564,27 +403,7 @@ function init() {
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             closeModal();
-        },
-    {
-        id: "who-is-the-user",
-        title: "Who is the user?",
-        category: "research",
-        visual: "triangle",
-        description: "A fundamental principle of user experience design that focuses on identifying and understanding the specific target users for whom a product, service, or application is being created.",
-        origin: "This principle emerged from user-centered design methodologies and market research practices, emphasizing the importance of precise user definition for effective product development.",
-        keyTakeaways: [
-            "Be as specific as possible when defining your target user",
-            "Avoid abstract user definitions that lead to unclear product direction",
-            "Define user characteristics, needs, and constraints in detail",
-            "Use concrete user descriptions to guide design decisions"
-        ],
-        examples: [
-            "Defining a user as: u0027A small business owner with limited tech experience, no paid online banking service, who often doesnu0027t know exactly how much they owe in taxes and contributionsu0027",
-            "Creating detailed user personas with specific demographics and behaviors",
-            "Conducting user research to identify precise target audience characteristics",
-            "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
-        ]
-    }
+        }
     });
     
     contactForm.addEventListener('submit', handleContactForm);
@@ -593,27 +412,7 @@ function init() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.style.display === 'flex') {
             closeModal();
-        },
-    {
-        id: "who-is-the-user",
-        title: "Who is the user?",
-        category: "research",
-        visual: "triangle",
-        description: "A fundamental principle of user experience design that focuses on identifying and understanding the specific target users for whom a product, service, or application is being created.",
-        origin: "This principle emerged from user-centered design methodologies and market research practices, emphasizing the importance of precise user definition for effective product development.",
-        keyTakeaways: [
-            "Be as specific as possible when defining your target user",
-            "Avoid abstract user definitions that lead to unclear product direction",
-            "Define user characteristics, needs, and constraints in detail",
-            "Use concrete user descriptions to guide design decisions"
-        ],
-        examples: [
-            "Defining a user as: u0027A small business owner with limited tech experience, no paid online banking service, who often doesnu0027t know exactly how much they owe in taxes and contributionsu0027",
-            "Creating detailed user personas with specific demographics and behaviors",
-            "Conducting user research to identify precise target audience characteristics",
-            "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
-        ]
-    }
+        }
     });
 }
 
