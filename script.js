@@ -212,6 +212,25 @@ const principlesData = [
             "User surveys on feature importance",
             "Focus groups discussing product concepts"
         ]
+    },
+    {
+        id: "who-is-the-user",
+        title: "Who is the user?",
+        category: "research",
+        description: "A fundamental principle of user experience design that focuses on identifying and understanding the specific target users for whom a product, service, or application is being created.",
+        origin: "This principle emerged from user-centered design methodologies and market research practices, emphasizing the importance of precise user definition for effective product development.",
+        keyTakeaways: [
+            "Be as specific as possible when defining your target user",
+            "Avoid abstract user definitions that lead to unclear product direction",
+            "Define user characteristics, needs, and constraints in detail",
+            "Use concrete user descriptions to guide design decisions"
+        ],
+        examples: [
+            "Defining a user as: 'A small business owner with limited tech experience, no paid online banking service, who often doesn't know exactly how much they owe in taxes and contributions'",
+            "Creating detailed user personas with specific demographics and behaviors",
+            "Conducting user research to identify precise target audience characteristics",
+            "Avoiding generic descriptions like 'all people who want to pay taxes online'"
+        ]
     }
 ];
 
@@ -249,12 +268,10 @@ function filterPrinciples(filter) {
     // Update active filter button
     filterButtons.forEach(btn => {
         btn.classList.remove('active');
-        if (btn.dataset.filter === filter) {
-            btn.classList.add('active');
-        }
     });
+    document.querySelector(`[data-filter="${filter}"]`).classList.add('active');
     
-    // Filter and display principles
+    // Filter principles
     const filteredPrinciples = filter === 'all' 
         ? principlesData 
         : principlesData.filter(principle => principle.category === filter);
@@ -275,46 +292,108 @@ function displayPrinciples(principles) {
 function createPrincipleCard(principle) {
     const card = document.createElement('div');
     card.className = 'principle-card';
+    card.dataset.principleId = principle.id;
+    
+    // Create visual element
+    const visualElement = createVisualElement(principle);
     
     card.innerHTML = `
-        <div class="category">${principle.category}</div>
-        <h3>${principle.title}</h3>
-        <p>${principle.description}</p>
+        <div class="principle-card-header ${principle.headerColor || 'blue'}">
+            ${visualElement.outerHTML}
+        </div>
+        <div class="principle-card-content">
+            <div class="category">${principle.category}</div>
+            <h3>${principle.title}</h3>
+            <p>${principle.description}</p>
+            <ul class="key-takeaways">
+                ${principle.keyTakeaways.map(takeaway => `<li>${takeaway}</li>`).join('')}
+            </ul>
+        </div>
     `;
     
-    card.addEventListener('click', () => openModal(principle));
+    // Add click event
+    card.addEventListener('click', () => {
+        openModal(principle);
+    });
     
     return card;
 }
 
-// Modal Management
+function createVisualElement(principle) {
+    const container = document.createElement('div');
+    container.className = 'principle-visual';
+    
+    let patternElement;
+    
+    switch(principle.visual) {
+        case 'triangle':
+        case 'people':
+            patternElement = document.createElement('div');
+            patternElement.className = 'triangle-pattern';
+            break;
+        case 'grid':
+        case 'research':
+            patternElement = document.createElement('div');
+            patternElement.className = 'grid-pattern';
+            for (let i = 0; i < 20; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'grid-dot';
+                patternElement.appendChild(dot);
+            }
+            break;
+        case 'chunking':
+        case 'process':
+            patternElement = document.createElement('div');
+            patternElement.className = 'chunking-pattern';
+            for (let i = 0; i < 40; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'chunking-dot';
+                patternElement.appendChild(dot);
+            }
+            break;
+        default:
+            patternElement = document.createElement('div');
+            patternElement.className = 'triangle-pattern';
+    }
+    
+    container.appendChild(patternElement);
+    return container;
+}
+
+// Modal Functions
 function openModal(principle) {
+    const visualElement = createVisualElement(principle);
+    
     modalBody.innerHTML = `
-        <h2>${principle.title}</h2>
-        <div class="category">${principle.category}</div>
-        <p><strong>Description:</strong> ${principle.description}</p>
-        
-        <h3>Origin</h3>
-        <p>${principle.origin}</p>
-        
-        <h3>Key Takeaways</h3>
-        <ul>
-            ${principle.keyTakeaways.map(takeaway => `<li>${takeaway}</li>`).join('')}
-        </ul>
-        
-        <h3>Examples</h3>
-        <ul>
-            ${principle.examples.map(example => `<li>${example}</li>`).join('')}
-        </ul>
+        <div class="modal-header">
+            <div class="principle-visual">
+                ${visualElement.outerHTML}
+            </div>
+            <h2>${principle.title}</h2>
+        </div>
+        <div class="modal-content-body">
+            <h3>Origin</h3>
+            <p>${principle.origin}</p>
+            
+            <h3>Key Takeaways</h3>
+            <ul>
+                ${principle.keyTakeaways.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            
+            <h3>Examples</h3>
+            <ul>
+                ${principle.examples.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+        </div>
     `;
     
-    modal.style.display = 'flex';
+    modal.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
 }
 
 // Contact Form
@@ -325,8 +404,8 @@ function handleContactForm(e) {
     const data = Object.fromEntries(formData);
     
     // Simple validation
-    if (!data.name || !data.email || !data.subject || !data.message) {
-        alert('Please fill in all fields');
+    if (!data.name || !data.email || !data.message) {
+        alert('Please fill in all required fields.');
         return;
     }
     
@@ -335,8 +414,45 @@ function handleContactForm(e) {
     contactForm.reset();
 }
 
-// Smooth Scrolling
-function initSmoothScrolling() {
+// Event Listeners
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize theme
+    initTheme();
+    
+    // Display all principles initially
+    displayPrinciples(principlesData);
+    
+    // Theme toggle
+    themeToggle.addEventListener('click', toggleTheme);
+    
+    // Filter buttons
+    filterButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            filterPrinciples(e.target.dataset.filter);
+        });
+    });
+    
+    // Modal close
+    modalClose.addEventListener('click', closeModal);
+    
+    // Close modal when clicking outside
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Contact form
+    contactForm.addEventListener('submit', handleContactForm);
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+    
+    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -349,10 +465,33 @@ function initSmoothScrolling() {
             }
         });
     });
-}
-
-// Navigation Highlighting
-function initNavigationHighlighting() {
+    
+    // Intersection Observer for animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+    
+    // Observe principle cards
+    const cards = document.querySelectorAll('.principle-card');
+    cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
+    
+    // Scroll-based navigation highlighting
     window.addEventListener('scroll', () => {
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.nav-link');
@@ -373,48 +512,4 @@ function initNavigationHighlighting() {
             }
         });
     });
-}
-
-// Initialize Application
-function init() {
-    // Initialize theme
-    initTheme();
-    
-    // Display all principles initially
-    displayPrinciples(principlesData);
-    
-    // Initialize smooth scrolling
-    initSmoothScrolling();
-    
-    // Initialize navigation highlighting
-    initNavigationHighlighting();
-    
-    // Add event listeners
-    themeToggle.addEventListener('click', toggleTheme);
-    
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filter = button.dataset.filter;
-            filterPrinciples(filter);
-        });
-    });
-    
-    modalClose.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModal();
-        }
-    });
-    
-    contactForm.addEventListener('submit', handleContactForm);
-    
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.style.display === 'flex') {
-            closeModal();
-        }
-    });
-}
-
-// Start the application
-document.addEventListener('DOMContentLoaded', init);
+});
