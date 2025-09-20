@@ -1,0 +1,20 @@
+    },
+    {
+        id: "CARD_ID_HERE",
+        title: "CARD_TITLE_HERE",
+        category: "CATEGORY_HERE",
+        description: "CARD_DESCRIPTION_HERE",
+        origin: "CARD_ORIGIN_HERE",
+        keyTakeaways: [
+            "TAKEAWAY_1",
+            "TAKEAWAY_2",
+            "TAKEAWAY_3",
+            "TAKEAWAY_4"
+        ],
+        examples: [
+            "EXAMPLE_1",
+            "EXAMPLE_2",
+            "EXAMPLE_3",
+            "EXAMPLE_4"
+        ]
+    }

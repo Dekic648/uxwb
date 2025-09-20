@@ -24,25 +24,6 @@ const principlesData = [
         ]
     },
     {
-        id: "systems-thinking",
-        title: "Systems Thinking",
-        category: "methodology",
-        description: "An approach to problem-solving that views a product, service, or organization as part of a larger, interconnected system rather than as isolated components, considering relationships, feedback loops, and dependencies among all parts of the ecosystem.",
-        origin: "Systems Thinking emerged from systems theory and cybernetics in the 1940s-50s, popularized by thinkers like Ludwig von Bertalanffy and Jay Forrester. It gained traction in design through the work of Donella Meadows and Peter Senge, emphasizing holistic problem-solving over linear cause-and-effect thinking.",
-        keyTakeaways: [
-            "View products and services as interconnected systems, not isolated components",
-            "Identify root causes rather than just treating symptoms of problems",
-            "Consider all stakeholders, touchpoints, and channels in your design decisions",
-            "Design for long-term sustainability and systemic impact, not just immediate fixes"
-        ],
-        examples: [
-            "Redesigning hospital check-in by mapping patient flows, staff roles, regulations, and emotional experiences",
-            "Improving public transport by considering mobile apps, pricing policies, and accessibility rather than just ticket machines",
-            "Designing banking services that account for digital interfaces, staff workflows, compliance, and customer trust",
-            "Creating educational platforms that consider student needs, teacher capabilities, institutional policies, and technology infrastructure"
-        ]
-    },
-    {
         id: 'researching-citizen-needs',
         title: "Researching Citizen/User Needs",
         category: 'research',
