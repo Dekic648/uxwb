@@ -232,6 +232,28 @@ const principlesData = [
             "Conducting user research to identify precise target audience characteristics",
             "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
         ]
+    },
+    {
+        id: "ux-design-challenge",
+        title: "UX Design Challenge",
+        category: "methodology",
+        visual: "grid",
+        description: "A structured approach to involving users in the design process when your team is discussing which problems to solve, ensuring user needs are at the center of decision-making.",
+        origin: "This methodology emerged from design thinking and user-centered design practices, emphasizing the importance of user involvement in problem definition and solution ideation phases.",
+        keyTakeaways: [
+            "Include users when discussing which problems to solve - they know their problems best",
+            "Define your target user as specifically as possible before recruitment",
+            "Recruit 5-10 users who match your defined user profile",
+            "Schedule sessions lasting up to 1 hour for optimal engagement",
+            "Consider organizing workshops with groups of 5 users as you gain experience"
+        ],
+        examples: [
+            "Conducting user interviews to understand real problems before solution design",
+            "Organizing co-design workshops with 5 target users to define problems",
+            "Creating detailed user profiles to ensure accurate recruitment",
+            "Scheduling 1-hour sessions with users to discuss their challenges and ideal solutions",
+            "Running problem-definition workshops with small groups of representative users"
+        ]
     }
 ];
 
@@ -290,6 +312,28 @@ function filterPrinciples(filter) {
             "Creating detailed user personas with specific demographics and behaviors",
             "Conducting user research to identify precise target audience characteristics",
             "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
+        ]
+    },
+    {
+        id: "ux-design-challenge",
+        title: "UX Design Challenge",
+        category: "methodology",
+        visual: "grid",
+        description: "A structured approach to involving users in the design process when your team is discussing which problems to solve, ensuring user needs are at the center of decision-making.",
+        origin: "This methodology emerged from design thinking and user-centered design practices, emphasizing the importance of user involvement in problem definition and solution ideation phases.",
+        keyTakeaways: [
+            "Include users when discussing which problems to solve - they know their problems best",
+            "Define your target user as specifically as possible before recruitment",
+            "Recruit 5-10 users who match your defined user profile",
+            "Schedule sessions lasting up to 1 hour for optimal engagement",
+            "Consider organizing workshops with groups of 5 users as you gain experience"
+        ],
+        examples: [
+            "Conducting user interviews to understand real problems before solution design",
+            "Organizing co-design workshops with 5 target users to define problems",
+            "Creating detailed user profiles to ensure accurate recruitment",
+            "Scheduling 1-hour sessions with users to discuss their challenges and ideal solutions",
+            "Running problem-definition workshops with small groups of representative users"
         ]
     }
     });
@@ -388,6 +432,28 @@ function handleContactForm(e) {
             "Conducting user research to identify precise target audience characteristics",
             "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
         ]
+    },
+    {
+        id: "ux-design-challenge",
+        title: "UX Design Challenge",
+        category: "methodology",
+        visual: "grid",
+        description: "A structured approach to involving users in the design process when your team is discussing which problems to solve, ensuring user needs are at the center of decision-making.",
+        origin: "This methodology emerged from design thinking and user-centered design practices, emphasizing the importance of user involvement in problem definition and solution ideation phases.",
+        keyTakeaways: [
+            "Include users when discussing which problems to solve - they know their problems best",
+            "Define your target user as specifically as possible before recruitment",
+            "Recruit 5-10 users who match your defined user profile",
+            "Schedule sessions lasting up to 1 hour for optimal engagement",
+            "Consider organizing workshops with groups of 5 users as you gain experience"
+        ],
+        examples: [
+            "Conducting user interviews to understand real problems before solution design",
+            "Organizing co-design workshops with 5 target users to define problems",
+            "Creating detailed user profiles to ensure accurate recruitment",
+            "Scheduling 1-hour sessions with users to discuss their challenges and ideal solutions",
+            "Running problem-definition workshops with small groups of representative users"
+        ]
     }
     
     // Simulate form submission
@@ -426,6 +492,28 @@ function initSmoothScrolling() {
             "Conducting user research to identify precise target audience characteristics",
             "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
         ]
+    },
+    {
+        id: "ux-design-challenge",
+        title: "UX Design Challenge",
+        category: "methodology",
+        visual: "grid",
+        description: "A structured approach to involving users in the design process when your team is discussing which problems to solve, ensuring user needs are at the center of decision-making.",
+        origin: "This methodology emerged from design thinking and user-centered design practices, emphasizing the importance of user involvement in problem definition and solution ideation phases.",
+        keyTakeaways: [
+            "Include users when discussing which problems to solve - they know their problems best",
+            "Define your target user as specifically as possible before recruitment",
+            "Recruit 5-10 users who match your defined user profile",
+            "Schedule sessions lasting up to 1 hour for optimal engagement",
+            "Consider organizing workshops with groups of 5 users as you gain experience"
+        ],
+        examples: [
+            "Conducting user interviews to understand real problems before solution design",
+            "Organizing co-design workshops with 5 target users to define problems",
+            "Creating detailed user profiles to ensure accurate recruitment",
+            "Scheduling 1-hour sessions with users to discuss their challenges and ideal solutions",
+            "Running problem-definition workshops with small groups of representative users"
+        ]
     }
         });
     });
@@ -463,6 +551,28 @@ function initNavigationHighlighting() {
             "Conducting user research to identify precise target audience characteristics",
             "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
         ]
+    },
+    {
+        id: "ux-design-challenge",
+        title: "UX Design Challenge",
+        category: "methodology",
+        visual: "grid",
+        description: "A structured approach to involving users in the design process when your team is discussing which problems to solve, ensuring user needs are at the center of decision-making.",
+        origin: "This methodology emerged from design thinking and user-centered design practices, emphasizing the importance of user involvement in problem definition and solution ideation phases.",
+        keyTakeaways: [
+            "Include users when discussing which problems to solve - they know their problems best",
+            "Define your target user as specifically as possible before recruitment",
+            "Recruit 5-10 users who match your defined user profile",
+            "Schedule sessions lasting up to 1 hour for optimal engagement",
+            "Consider organizing workshops with groups of 5 users as you gain experience"
+        ],
+        examples: [
+            "Conducting user interviews to understand real problems before solution design",
+            "Organizing co-design workshops with 5 target users to define problems",
+            "Creating detailed user profiles to ensure accurate recruitment",
+            "Scheduling 1-hour sessions with users to discuss their challenges and ideal solutions",
+            "Running problem-definition workshops with small groups of representative users"
+        ]
     }
         });
         
@@ -489,6 +599,28 @@ function initNavigationHighlighting() {
             "Creating detailed user personas with specific demographics and behaviors",
             "Conducting user research to identify precise target audience characteristics",
             "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
+        ]
+    },
+    {
+        id: "ux-design-challenge",
+        title: "UX Design Challenge",
+        category: "methodology",
+        visual: "grid",
+        description: "A structured approach to involving users in the design process when your team is discussing which problems to solve, ensuring user needs are at the center of decision-making.",
+        origin: "This methodology emerged from design thinking and user-centered design practices, emphasizing the importance of user involvement in problem definition and solution ideation phases.",
+        keyTakeaways: [
+            "Include users when discussing which problems to solve - they know their problems best",
+            "Define your target user as specifically as possible before recruitment",
+            "Recruit 5-10 users who match your defined user profile",
+            "Schedule sessions lasting up to 1 hour for optimal engagement",
+            "Consider organizing workshops with groups of 5 users as you gain experience"
+        ],
+        examples: [
+            "Conducting user interviews to understand real problems before solution design",
+            "Organizing co-design workshops with 5 target users to define problems",
+            "Creating detailed user profiles to ensure accurate recruitment",
+            "Scheduling 1-hour sessions with users to discuss their challenges and ideal solutions",
+            "Running problem-definition workshops with small groups of representative users"
         ]
     }
         });
@@ -543,6 +675,28 @@ function init() {
             "Conducting user research to identify precise target audience characteristics",
             "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
         ]
+    },
+    {
+        id: "ux-design-challenge",
+        title: "UX Design Challenge",
+        category: "methodology",
+        visual: "grid",
+        description: "A structured approach to involving users in the design process when your team is discussing which problems to solve, ensuring user needs are at the center of decision-making.",
+        origin: "This methodology emerged from design thinking and user-centered design practices, emphasizing the importance of user involvement in problem definition and solution ideation phases.",
+        keyTakeaways: [
+            "Include users when discussing which problems to solve - they know their problems best",
+            "Define your target user as specifically as possible before recruitment",
+            "Recruit 5-10 users who match your defined user profile",
+            "Schedule sessions lasting up to 1 hour for optimal engagement",
+            "Consider organizing workshops with groups of 5 users as you gain experience"
+        ],
+        examples: [
+            "Conducting user interviews to understand real problems before solution design",
+            "Organizing co-design workshops with 5 target users to define problems",
+            "Creating detailed user profiles to ensure accurate recruitment",
+            "Scheduling 1-hour sessions with users to discuss their challenges and ideal solutions",
+            "Running problem-definition workshops with small groups of representative users"
+        ]
     }
     });
     
@@ -571,6 +725,28 @@ function init() {
             "Creating detailed user personas with specific demographics and behaviors",
             "Conducting user research to identify precise target audience characteristics",
             "Avoiding generic descriptions like u0027all people who want to pay taxes onlineu0027"
+        ]
+    },
+    {
+        id: "ux-design-challenge",
+        title: "UX Design Challenge",
+        category: "methodology",
+        visual: "grid",
+        description: "A structured approach to involving users in the design process when your team is discussing which problems to solve, ensuring user needs are at the center of decision-making.",
+        origin: "This methodology emerged from design thinking and user-centered design practices, emphasizing the importance of user involvement in problem definition and solution ideation phases.",
+        keyTakeaways: [
+            "Include users when discussing which problems to solve - they know their problems best",
+            "Define your target user as specifically as possible before recruitment",
+            "Recruit 5-10 users who match your defined user profile",
+            "Schedule sessions lasting up to 1 hour for optimal engagement",
+            "Consider organizing workshops with groups of 5 users as you gain experience"
+        ],
+        examples: [
+            "Conducting user interviews to understand real problems before solution design",
+            "Organizing co-design workshops with 5 target users to define problems",
+            "Creating detailed user profiles to ensure accurate recruitment",
+            "Scheduling 1-hour sessions with users to discuss their challenges and ideal solutions",
+            "Running problem-definition workshops with small groups of representative users"
         ]
     }
     });
